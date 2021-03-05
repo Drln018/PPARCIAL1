@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HOYSI.Page1">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Black"    Padding="30" CornerRadius="0">
+                <Label Text="Adivinaré cualquier numero que pienses en 3 pasos" 
+                    HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+            <Label Text="1. Piensa un numero y multiplicalo por 2" VerticalOptions="Center" HorizontalOptions="Center" FontSize=" 20" />
+            <Label Text="2. Sumale 8 al resultado " VerticalOptions="Center" HorizontalOptions="Center"   FontSize="20" />
+            <Label Text="3. Luego multiplicalo por 5" VerticalOptions="Center" HorizontalOptions="Center"  FontSize="20"/>
+            <Label Text="Ingresa el resultado: " HorizontalOptions="Center" FontSize="20" />
+            <Entry Placeholder="- - - - - -" x:Name="Num"
+               HorizontalOptions="Center" 
+               Keyboard="Numeric" />
+            <Label Text=" El numero que pensaste es: " HorizontalOptions="Center" FontSize="20" />
+            <Entry Placeholder=" ? ? ? " x:Name="Resultado"
+               HorizontalOptions="Center" 
+               IsEnabled="False" />
+            <Button x:Name="Button" Text="Continuar" Clicked="Continuar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

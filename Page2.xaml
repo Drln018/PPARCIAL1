@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HOYSI.Page2">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="Black"    Padding="30" CornerRadius="0">
+                <Label Text="Adivinaré tu fecha de cumpleaños en 4 pasos" 
+                    HorizontalTextAlignment="Center" TextColor="White" FontSize="25"/>
+            </Frame>
+            <Label Text="1. Piensa en el dia de tu cumpleaños y multiplícalo por 20" VerticalOptions="Center"  HorizontalOptions="Center" FontSize=" 20" />
+            <Label Text="2. Al resultado sumale 73" VerticalOptions="Center" HorizontalOptions="Center"    FontSize="20" />
+            <Label Text="3. Luego multiplicalo por 5" VerticalOptions="Center" HorizontalOptions="Center"  FontSize="20"/>
+            <Label Text="4. Ahora, sumale el numero de mes de tu cumpleaños" VerticalOptions="Center"  HorizontalOptions="Center"  FontSize="20"/>
+            <Label Text="Ingresa el resultado: " HorizontalOptions="Center" FontSize="20" />
+            <Entry Placeholder="- - - - - -" x:Name="Num2"
+               HorizontalOptions="Center" 
+               Keyboard="Numeric" />
+            <Label Text=" Tu fecha de cumpleaños es  " HorizontalOptions="Center" FontSize="20" />
+            <Label Text="Dia:" HorizontalOptions="Center" FontSize="20"/>
+            <Entry Placeholder=" ? ? ? " x:Name="Dia"
+               HorizontalOptions="Center" 
+               IsEnabled="False" />
+            <Label Text="Mes:" HorizontalOptions="Center" FontSize="20"/>
+            <Entry Placeholder=" ? ? ? " x:Name="Mes"
+               HorizontalOptions="Center" 
+               IsEnabled="False" />
+            <Button x:Name="Continuar2" Text="Continuar" Clicked="Continuar2_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
